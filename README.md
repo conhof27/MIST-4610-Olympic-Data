@@ -10,7 +10,7 @@
 * **Taylor Keller** - [GitHub Repository Link Here]
 * **Josie Bowden** - [GitHub Repository Link Here]
 * **Tyler Pawlowski** - [GitHub Repository Link Here]
-* **Connor Hofmann** - [GitHub Repository Link Here]
+* **Connor Hofmann** - (https://github.com/conhof27/MIST-4610-Olympic-Data/tree/main)
 * **Dean Wadud** - [GitHub Repository Link Here]
 
 ## Scenario Description
