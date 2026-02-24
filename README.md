@@ -21,7 +21,7 @@ This database tracks the hierarchical structure of global competition, starting 
 
 ## Data Model
 
-*(Note: Replace `Path_To_Your_PNG_File_Here.png` with the actual file path of your image when uploading to GitHub)*
+*(Note: Replace `Olympic Relational Model.pdf` with the actual file path of your image when uploading to GitHub)*
 
 ### Explanation of the Data Model
 
