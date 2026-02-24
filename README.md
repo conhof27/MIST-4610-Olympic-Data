@@ -10,39 +10,39 @@
 * **Taylor Keller** - [GitHub Repository Link Here]
 * **Josie Bowden** - [GitHub Repository Link Here]
 * **Tyler Pawlowski** - [GitHub Repository Link Here]
-* **Connor Hofmann** - (https://github.com/conhof27/MIST-4610-Olympic-Data/tree/main)
+* **Connor Hofmann** - [GitHub Link](https://github.com/conhof27/MIST-4610-Olympic-Data/tree/main)
 * **Dean Wadud** - [GitHub Repository Link Here]
 
 ## Scenario Description
 
-The Olympic Games represent one of the most logistically complex events in the world, requiring precise coordination across a vast network of people, locations, and schedules. Our team modeled a comprehensive relational database designed to manage the core operations of the Olympic Games.
+The Olympic Games represent one of the most logistically complex events in the world, requiring precise coordination across a vast network of people, locations, and schedules.  Our team modeled a comprehensive relational database designed to manage the core operations of the Olympic Games.
 
-This database tracks the hierarchical structure of global competition, starting from the participating **Countries** down to the individual **Athletes** and **Staff** members (such as coaches and medical trainers). It efficiently schedules competitive **Events** (linked to their broader **Sports**) across various time blocks (**Sessions**) and physical **Venues**. Furthermore, the model handles fan engagement by tracking **Spectators** and their **Ticket** purchases for specific sessions. Finally, it securely logs the ultimate outcomes of the games by recording athlete **Results**, including scores, placements, disqualifications, and the specific **Medals** awarded.
+This database tracks the hierarchical structure of global competition, starting from the participating **Countries** down to the individual **Athletes** and **Staff** members (such as coaches and medical trainers).  It efficiently schedules competitive **Events** (linked to their broader **Sports**) across various time blocks (**Sessions**) and physical **Venues**.  Furthermore, the model handles fan engagement by tracking **Spectators** and their **Ticket** purchases for specific sessions.  Finally, it securely logs the ultimate outcomes of the games by recording athlete **Results**, including scores, placements, disqualifications, and the specific **Medals** awarded.
 
 ## Data Model
 
-*(Note: Replace `Olympic Relational Model.pdf` with the actual file path of your image when uploading to GitHub)*
+*[Olympic Relational Model](https://github.com/conhof27/MIST-4610-Olympic-Data/blob/990250ea28bb17d42f42e8d5f7f552ee3d617ee4/Olympic%20Relational%20Model.pdf)*
 
 ### Explanation of the Data Model
 
-Our data model is in 3rd Normal Form and consists of 14 entities:
+Our data model consists of 14 unique entities:
 
-* **Core Reference Data:** `Country`, `Venue`, `Sport`, `Medal`, and `Staff_Role`. These lookup tables ensure data consistency and prevent entry anomalies (e.g., standardizing the 4 types of medals or standardizing IOC codes).
+* **Core Reference Data:** `Country`, `Venue`, `Sport`, `Medal`, and `Staff_Role`.  These lookup tables ensure data consistency and prevent entry anomalies (e.g., standardizing the 4 types of medals or standardizing IOC codes).
 
-* **People & Roles:** The `Athlete` and `Staff` tables are linked to their respective `Country`. To account for the reality that an athlete might have multiple coaches and a coach might train multiple athletes, we resolved this M:N relationship with the `Athlete_Staff` bridge table.
+* **People & Roles:** The `Athlete` and `Staff` tables are linked to their respective `Country`.  To account for the reality that an athlete might have multiple coaches and a coach might train multiple athletes, we resolved this M:N relationship with the `Athlete_Staff` bridge table.
 
-* **Scheduling Logistics:** Because an `Event` (like the 100m Sprint) spans multiple time blocks (heats, semi-finals, finals), and a `Session` can host multiple events, they are connected via the `Event_Session` bridge table. `Sessions` are physically hosted at a single `Venue`.
+* **Scheduling Logistics:** Because an `Event` (like the 100m Sprint) spans multiple time blocks (heats, semi-finals, finals), and a `Session` can host multiple events, they are connected via the `Event_Session` bridge table.  `Sessions` are physically hosted at a single `Venue`.
 
 * **Fan Access:** Fans (`Spectators`) purchase `Tickets` that grant them a specific seat and price point for a specific `Session`.
 
-* **Outcomes:** The `Result` table acts as the ultimate transactional hub. It connects an `Athlete`, an `Event`, and a `Medal` to record a finalized `ScoreOrTime`, `Placement`, and `IsDisqualified` flag.
+* **Outcomes:** The `Result` table acts as the ultimate transactional hub.  It connects an `Athlete`, an `Event`, and a `Medal` to record a finalized `ScoreOrTime`, `Placement`, and `IsDisqualified` flag.
 
 **What our database supports:** Tracking current game rosters, managing multi-day event schedules, processing ticket revenue, and tallying current medal leaderboards.
 **What our database does NOT support:** It does not store historical Olympic data from previous years, financial payroll for staff/athletes, or highly detailed in-game statistics (like possession time or individual lap splits).
 
 ## Data Dictionary
 
-*(Below is a sample of our data dictionary. Please see the full PDF/Excel file in the repository for all 14 tables).*
+*(Below is a sample of our data dictionary.  Please see the full PDF/Excel file in the repository for all 14 tables).*
 
 ### Table: `Result`
 
