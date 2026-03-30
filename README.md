@@ -93,7 +93,7 @@ Our data model consists of 14 unique entities:
 ### Query 1: Total Medals by Country (Simple)
 
 **Description:** 
-This query will show which country in each continent has won the most medals in the Olympics
+Identifies which countries are performing the best overall by calculating the total number of medals won by their athletic delegation.
 
 ### Query 2: Average Ticket Price per Sport (Simple)
 
@@ -135,7 +135,7 @@ Determine and list the countries that have a greater number of staff members tha
 **Description:** 
 List the oldest medalists for each sport and include their name, age, and host country. 
 
-### Query 10: The Staff Hierarchy (Self-Join) (Comp.)
+### Query 10: The Staff Hierarchy (Comp.)
 
 **Description:**
 Utilizes a recursive self-join to list all "Assistant Coaches" alongside the specific First and Last name of the "Head Coach" they report to.
