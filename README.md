@@ -113,23 +113,22 @@ Determine the average ticket price per sport by looking at every event that has 
 Query 2 gives a manager perspective on event sporting event's ticket pricing. This query provides conglomerated data on the varying ticket prices across events. This provides comparable pricing data, displaying which events are more costly than others. It could also indicate which event's tickets may be in higher demand- indicated by a higher ticket price. This could provide insight into why certain events are attended more or less than others and which events that spectators would pay a higher ticket price for. 
 
 ### Query 3: Total Athletes Registered per Country (Simple)
-<img width="567" height="67" alt="Screenshot 2026-03-30 at 1 31 28 PM" src="https://github.com/user-attachments/assets/939ec8e6-828b-4f8f-a55e-d1036e494308" />
+<img width="487" height="86" alt="Screenshot 2026-03-30 at 4 51 40 PM" src="https://github.com/user-attachments/assets/8f279e4a-8e2a-486b-ab01-322508db8479" />
 <br>
-<img width="166" height="199" alt="Screenshot 2026-03-30 at 1 31 53 PM" src="https://github.com/user-attachments/assets/46ebf993-4a44-4a9e-960c-e58b7387698e" />
+<img width="361" height="133" alt="Screenshot 2026-03-30 at 4 51 57 PM" src="https://github.com/user-attachments/assets/e5a72ec1-549e-4960-8c90-699f606a8de5" />
 
 **Description:** 
-Lists every country alongside the total count of athletes they sent to the Olympics.
+Retrieve the names and gender categories of all events that are short-to-mid distance track or skating events (500m, 1000m, or 1500m).
 <br>
 **Justification:**
-Query 3 provides a manager with a list of each country and the number of athletes present at the Olympics. This allows a manager to readily view which country sent the most athletes and which country sent the least. This may provide insight into a country's population size or their investment in Olympic athletes. Query 3 gives Olympic analysts insight into which country may produce more representation across sports. For example, a country with a low number of athletes present at the Olympic Games may not compete in as many events as a country with a higher number of athletes present.
 
 ### Query 4: Staff Distribution by Role (Simple) 
-<img width="582" height="85" alt="Screenshot 2026-03-30 at 1 36 42 PM" src="https://github.com/user-attachments/assets/5c580324-992d-491f-9c73-8cf65463e13c" />
+<img width="555" height="105" alt="Screenshot 2026-03-30 at 4 57 14 PM" src="https://github.com/user-attachments/assets/9fb8029f-851d-468e-a2a3-cbab9524bd93" />
 <br>
-<img width="226" height="95" alt="Screenshot 2026-03-30 at 1 37 17 PM" src="https://github.com/user-attachments/assets/29344edd-66bb-4385-9c6f-9a2554405104" />
+<img width="352" height="165" alt="Screenshot 2026-03-30 at 4 55 54 PM" src="https://github.com/user-attachments/assets/854aaf2f-4e4e-4e99-8afb-5d400f7a4318" />
 
 **Description:** 
-Calculates the total number of registered staff members assigned to each specific job role (e.g., Head Coach, Assistant Coach, Medical).
+Retrieve the first name, last name, and country name of all athletes born after January 1, 2002, who are representing either Japan, France, or Austria.
 <br>
 **Justification:**
 
