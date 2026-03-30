@@ -158,7 +158,7 @@ Identifies "Premium" events by calculating the average ticket price for each eve
 <img width="333" height="250" alt="Screenshot 2026-03-30 at 4 01 42 PM" src="https://github.com/user-attachments/assets/bb185563-90d4-4cee-99b5-cb5d61851f44" />
 
 **Description:** 
-Uses the AthleteStaff bridge table to identify high-level staff members who are individually assigned to manage or care for two or more different athletes, alongside their specific role.
+Uses the AthleteStaff bridge table to identify high-level staff members who are individually assigned to manage or care for three or more different athletes, alongside their specific role.
 <br>
 **Justification:**
 
