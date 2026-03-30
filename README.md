@@ -93,49 +93,49 @@ Our data model consists of 14 unique entities:
 ### Query 1: Total Medals by Country (Simple)
 
 **Description:** 
-This query will show which country in each continent has won the most amount of medals in the 2026 Winter Olympics
+This query will show which country in each continent has won the most medals in the Olympics
 
 ### Query 2: Average Ticket Price per Sport (Simple)
 
 **Description:** 
 Determine the average ticket price per sport by looking at every event that has occurred and the ticket price. 
 
-### Query 3: Athletes Competing in Multiple Sports (Comp.)
+### Query 3: Total Athletes Registered per Country (Simple)
+
+**Description:** 
+Lists every country alongside the total count of athletes they sent to the Olympics.
+
+### Query 4: Staff Distribution by Role (Simple) 
+
+**Description:** 
+Calculates the total number of registered staff members assigned to each specific job role (e.g., Head Coach, Assistant Coach, Medical).
+
+### Query 5: Athletes Competing in Multiple Sports (Comp.)
 
 **Description:** 
 A composite list of every athlete that competes in more than one sport.
 
-### Query 4: Events Operating Below 50% Capacity (Comp.)
+### Query 6: Events Operating Below 50% Capacity (Comp.)
 
 **Description:** 
  List which event’s attendance was below 50% full or the events where only half the seats were filled by spectators.
 
-### Query 5: Gold Medal Countries with No Registered Staff (Comp.)
+### Query 7: Gold Medal Countries with No Registered Staff (Comp.)
 
 **Description:** 
 List the countries that have been awarded a Gold medal but do not have any registered staff to their country. 
 
-### Query 6: 
-
-**Description:** 
-List the countries and their unique number of athletes and number of bronze, silver, and/or gold medals that country has won.
-
-### Query 7: Countries with More Staff than Medals (Comp.)
+### Query 8: Countries with More Staff than Medals (Comp.)
 
 **Description:** 
 Determine and list the countries that have a greater number of staff members than medals won relative to that country. 
 
-### Query 8: Youngest & Oldest Medalists per Sport (Comp.)
+### Query 9: Oldest Medalists per Sport (Comp.)
 
 **Description:** 
-Per unique sport, list the older and youngest given medalists and include their name, age, and host country. 
+List the oldest medalists for each sport and include their name, age, and host country. 
 
-### Query 9: 
-
-**Description:** 
-List the country that has the most gold medals out of every country in its continent.
-
-### Query 10: 
+### Query 10: The Staff Hierarchy (Self-Join) (Comp.)
 
 **Description:**
- Determine the average age of athletes for each country.
+Utilizes a recursive self-join to list all "Assistant Coaches" alongside the specific First and Last name of the "Head Coach" they report to.
