@@ -169,6 +169,9 @@ List the oldest medalists for each sport and include their name, age, and host c
 **Justification:**
 
 ### Query 10: The Staff Hierarchy (Comp.)
+<img width="745" height="128" alt="Screenshot 2026-03-30 at 3 08 30 PM" src="https://github.com/user-attachments/assets/227c83ff-60be-4d87-ab1c-45c54c759bec" />
+<br>
+<img width="372" height="497" alt="Screenshot 2026-03-30 at 3 08 55 PM" src="https://github.com/user-attachments/assets/32802725-1dbb-4320-9d90-b6684a087c55" />
 
 **Description:**
 Utilizes a recursive self-join to list all "Assistant Coaches" alongside the specific First and Last name of the "Head Coach" they report to.
