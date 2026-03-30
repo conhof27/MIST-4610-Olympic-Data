@@ -97,6 +97,7 @@ Our data model consists of 14 unique entities:
 
 **Description:** 
 Identifies which countries are performing the best overall by calculating the total number of medals won by their athletic delegation.
+**Justification:**
 Query 1 allows managers or olympic fans to conscisely view the number of medals each country has been awarded. This is useful to assess which countries are in the lead by number of medals won. This allows country's olympic success to be compared and ranked in a simple manner, exlcuding factors other than event results. Query 1  allows a manager to analyze a country as a whole, including every event. This compares countries regardless of how many events they compete in but rather how they have competed in the olympics in its entirety.
 
 ### Query 2: Average Ticket Price per Sport (Simple)
@@ -106,6 +107,8 @@ Query 1 allows managers or olympic fans to conscisely view the number of medals 
 
 **Description:** 
 Determine the average ticket price per sport by looking at every event that has occurred and the ticket price. 
+**Justification:**
+Query 2 gives a manager perspective on event sporting event's ticket pricing. This query provides conglomerated data on the varying ticket prices across events. This provides comparable pricing data, displaying which events are more costly than others. It could also indicate which event's tickets may be in higher demand- indicated by a higher ticket price. This could provide insight into why certain events are attended more or less than others and which events that spectators would pay a higher ticket price for. 
 
 ### Query 3: Total Athletes Registered per Country (Simple)
 <img width="567" height="67" alt="Screenshot 2026-03-30 at 1 31 28 PM" src="https://github.com/user-attachments/assets/939ec8e6-828b-4f8f-a55e-d1036e494308" />
@@ -114,6 +117,8 @@ Determine the average ticket price per sport by looking at every event that has 
 
 **Description:** 
 Lists every country alongside the total count of athletes they sent to the Olympics.
+**Justification:**
+Query 3 provides a manager with a list of each country and the number of athletes present at the Olympics. This allows a manager to readily view which country sent the most athletes and which country sent the least. This may provide insight into a country's population size or their investment in Olympic athletes. Query 3 gives Olympic analysts insight into which country may produce more representation across sports. For example, a country with a low number of athletes present at the Olympic Games may not compete in as many events as a country with a higher number of athletes present.
 
 ### Query 4: Staff Distribution by Role (Simple) 
 <img width="582" height="85" alt="Screenshot 2026-03-30 at 1 36 42 PM" src="https://github.com/user-attachments/assets/5c580324-992d-491f-9c73-8cf65463e13c" />
@@ -122,6 +127,7 @@ Lists every country alongside the total count of athletes they sent to the Olymp
 
 **Description:** 
 Calculates the total number of registered staff members assigned to each specific job role (e.g., Head Coach, Assistant Coach, Medical).
+**Justification:**
 
 ### Query 5: Athletes Competing in Multiple Sports (Comp.)
 <img width="773" height="127" alt="Screenshot 2026-03-30 at 2 02 45 PM" src="https://github.com/user-attachments/assets/b0067bac-c7f4-4326-a6b5-ded96930e6d7" />
@@ -130,16 +136,19 @@ Calculates the total number of registered staff members assigned to each specifi
 
 **Description:** 
 A composite list of every athlete that competes in more than one sport. (In this scenario, we modified to only include Atheletes that are in 3 or more sports because the original output would've been to long to display)
+**Justification:**
 
 ### Query 6: Events Operating Below 50% Capacity (Comp.)
 
 **Description:** 
  List which event’s attendance was below 50% full or the events where only half the seats were filled by spectators.
+**Justification:**
 
 ### Query 7: Gold Medal Countries with No Registered Staff (Comp.)
 
 **Description:** 
 List the countries that have been awarded a Gold medal but do not have any registered staff to their country. 
+**Justification:**
 
 ### Query 8: Countries with More Medals than Staff (Comp.)
 <img width="896" height="86" alt="Screenshot 2026-03-30 at 2 25 15 PM" src="https://github.com/user-attachments/assets/9a3a2479-c7a8-47ef-954d-82b0280fac1e" />
@@ -148,13 +157,16 @@ List the countries that have been awarded a Gold medal but do not have any regis
 
 **Description:** 
 Determine and list the countries that have a greater number of medals than staff members relative to that country. 
+**Justification:**
 
 ### Query 9: Oldest Medalists per Sport (Comp.)
 
 **Description:** 
 List the oldest medalists for each sport and include their name, age, and host country. 
+**Justification:**
 
 ### Query 10: The Staff Hierarchy (Comp.)
 
 **Description:**
 Utilizes a recursive self-join to list all "Assistant Coaches" alongside the specific First and Last name of the "Head Coach" they report to.
+**Justification:**
