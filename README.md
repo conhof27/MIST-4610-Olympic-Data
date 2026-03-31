@@ -209,3 +209,9 @@ Utilizes a recursive self-join and an aggregate function to list every Superviso
 
 **Justification:**
 Query 10 allows a manager to view how many subordinates report to each supervisor. This is useful for an Olympic analyst to consider or compare the size of each supervisor’s staff. This is also useful for Olympic coordinators to provide accommodations for staff that may differ from elite accommodations provided to supervisors. Additionally, for Olympic analysts- correlations between staff sizes and winning teams could be easily compared with this query. 
+
+
+## Database Information 
+Name of the database: al_Group_21482_G8
+
+Additional information: Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL TP_Qx();
