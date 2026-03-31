@@ -11,7 +11,7 @@
 * **Josie Bowden** - [GitHub Link](https://github.com/JosieBowden/MIST-4610-Olympic-Data)
 * **Tyler Pawlowski** - [GitHub Repository Link Here]
 * **Connor Hofmann** - [GitHub Link](https://github.com/conhof27/MIST-4610-Olympic-Data/tree/main)
-* **Dean Wadud** - [GitHub Repository Link Here]
+* **Dean Wadud** - [GitHub Repository Link Here](https://github.com/dean-wadud?tab=repositories)
 
 ## Scenario Description
 
