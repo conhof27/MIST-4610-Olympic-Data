@@ -98,6 +98,7 @@ Query 1 lists the total number of medals won by each country while ordering the 
 <img width="581" height="107" alt="Screenshot 2026-03-30 at 1 01 52 PM" src="https://github.com/user-attachments/assets/221683af-c035-40e1-b682-72830c30c22a" /> 
 <br>
 <img width="158" height="198" alt="Screenshot 2026-03-30 at 1 02 19 PM" src="https://github.com/user-attachments/assets/922fbfc8-1ad6-4116-a6d6-adbbab706703" />
+
 **Justification:**
 Query 1 allows managers or olympic fans to conscisely view the number of medals each country has been awarded. This is useful to assess which countries are in the lead by number of medals won. This allows country's olympic success to be compared and ranked in a simple manner, exlcuding factors other than event results. Query 1  allows a manager to analyze a country as a whole, including every event. This compares countries regardless of how many events they compete in but rather how they have competed in the olympics in its entirety.
 
@@ -109,17 +110,19 @@ Query 2 lists the average ticket price per sport while ordering them from highes
 <img width="550" height="148" alt="Screenshot 2026-03-30 at 1 19 47 PM" src="https://github.com/user-attachments/assets/2a370085-8498-4c9d-b4a2-8e33008f71bd" />
 <br>
 <img width="250" height="258" alt="Screenshot 2026-03-30 at 1 20 19 PM" src="https://github.com/user-attachments/assets/b1dedcfd-492d-47f1-ab5a-2c47310b6037" />
+
 **Justification:**
 Query 2 gives a manager perspective on event sporting event's ticket pricing. This query provides conglomerated data on the varying ticket prices across events. This provides comparable pricing data, displaying which events are more costly than others. It could also indicate which event's tickets may be in higher demand- indicated by a higher ticket price. This could provide insight into why certain events are attended more or less than others and which events that spectators would pay a higher ticket price for. 
 
 ### Query 3: Total Athletes Registered per Country (Simple)
+
+**Description:** 
+Query 3 lists the disctinct event names, gender categories, and associated sport name for all events that are short-to-mid distance races (500m, 1000m, 1500m). The query joins the Event and Sport table and then filters the results using a regulat expression to match only events with those distances in their names. The results are ordered alphabetically by event name and then by event gender. 
+<br>
 <img width="487" height="86" alt="Screenshot 2026-03-30 at 4 51 40 PM" src="https://github.com/user-attachments/assets/8f279e4a-8e2a-486b-ab01-322508db8479" />
 <br>
 <img width="361" height="133" alt="Screenshot 2026-03-30 at 4 51 57 PM" src="https://github.com/user-attachments/assets/e5a72ec1-549e-4960-8c90-699f606a8de5" />
 
-**Description:** 
-Retrieve the names and gender categories of all events that are short-to-mid distance track or skating events (500m, 1000m, or 1500m).
-<br>
 **Justification:**
 
 ### Query 4: Staff Distribution by Role (Simple) 
