@@ -7,7 +7,7 @@
 
 **Team Members:**
 
-* **Taylor Keller** - [@taylorkeller3](https://github.com/taylorkeller3)
+* **Taylor Keller** - [GitHub Link](https://github.com/taylorkeller3)
 * **Josie Bowden** - [GitHub Link](https://github.com/JosieBowden/MIST-4610-Olympic-Data)
 * **Tyler Pawlowski** - [GitHub Link](https://github.com/tdpaw11/MIST-4610-Olympic-Data)
 * **Connor Hofmann** - [GitHub Link](https://github.com/conhof27/MIST-4610-Olympic-Data/tree/main)
