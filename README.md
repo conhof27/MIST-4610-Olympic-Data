@@ -152,8 +152,12 @@ A composite list of every athlete that competes in more than one sport. (In this
 <img width="411" height="444" alt="Screenshot 2026-03-30 at 3 55 47 PM" src="https://github.com/user-attachments/assets/a106f671-8d86-400d-a1ef-85f0ec7068d3" />
 
 **Description:** 
-Identifies "Premium" events by calculating the average ticket price for each event and using a subquery to only list those that are strictly higher than the overall global average ticket price.
+Query 6 identifies the "Premium" events by listing all events whose average ticket price is above the overall average ticket price across all tickets. The query joins the Event, Sport, EventSession, Session and Tickets tables to calculate the average ticket price per event. A subquery is used in a HAVING clause to calculate the global average ticket price. Only events with average ticket prices exceeding that threshold are included. The results are ordered by averge event price in descending order and then by gender in ascending order.
 <br>
+<img width="651" height="168" alt="Screenshot 2026-03-30 at 3 54 48 PM" src="https://github.com/user-attachments/assets/861b8bdb-dc54-4db3-91c3-d3b5844757f2" />
+<br>
+<img width="411" height="444" alt="Screenshot 2026-03-30 at 3 55 47 PM" src="https://github.com/user-attachments/assets/a106f671-8d86-400d-a1ef-85f0ec7068d3" />
+
 **Justification:**
 
 ### Query 7: Staff Managing Multiple Athletes (Comp.)
