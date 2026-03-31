@@ -125,7 +125,7 @@ Query 3 lists the disctinct event names, gender categories, and associated sport
 
 **Justification:**
 
-### Query 4: Staff Distribution by Role (Simple) 
+### Query 4: Post-2002 Athlete Demographics by Country (Simple)
 
 **Description:** 
 Query 4 lists the first name, last name, country, and date of birth of all athletes born aftre January 1, 2002, who are representing Japan, France, or Austria. This query joins the Athlete and Country tables and filters the results by both date of birth and country name. The results are ordered alphabetically by country name and then by last name.
