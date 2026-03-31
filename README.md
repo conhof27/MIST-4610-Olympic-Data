@@ -21,7 +21,8 @@ This database tracks the hierarchical structure of global competition, starting 
 
 ## Data Model
 
-*[Olympic Relational Model](https://github.com/conhof27/MIST-4610-Olympic-Data/blob/5f5ecf40d849ed4d5f3df20fc15c5560b1c1ae6a/Olympic%20Relational%20Model.pdf)*
+<img width="3195" height="1920" alt="Olympic Relational Model G8" src="https://github.com/user-attachments/assets/cf831a8b-a5ae-4e33-8163-d65988bdb1ce" />
+
 
 ### Explanation of the Data Model
 
