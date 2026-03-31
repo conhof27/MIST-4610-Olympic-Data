@@ -141,7 +141,7 @@ Query 4 lists out Gen Z athletes from Japan, France, and Austria. This could be 
 ### Query 5: Athletes Competing in Multiple Sports (Comp.)
 
 **Description:** 
-A composite list of every athlete that competes in more than one sport. (In this scenario, we modified to only include Atheletes that are in 3 or more sports because the original output would've been too long to display)
+Query 5 lists all athletes who have competed in more than 1 distinct sports, their country, and number of unique sports that they competed in. The query joins the Athlete, Country, Results, and Events tables to count the number of distinct sports associated with each athlete. The results are grouped by athlete and filtered using a HAVING clause to include those with more than 1 unique sports. In this scenario, the threshold was modified from more than 1 sport to 3 sports or more so that output could display well on the site. 
 <br>
 <img width="773" height="127" alt="Screenshot 2026-03-30 at 2 02 45 PM" src="https://github.com/user-attachments/assets/b0067bac-c7f4-4326-a6b5-ded96930e6d7" />
 <br>
@@ -201,7 +201,7 @@ Query 9 shows a manager an itemized list by sport, the oldest olympian’s name,
 ### Query 10: The Staff Hierarchy (Comp.)
 
 **Description:**
-Utilizes a recursive self-join and an aggregate function to list every Supervisor alongside the exact count of how many subordinate staff members report directly to them.
+Query 10 lists every staff member who acts as a supervisor, along with their country, and number of subordinates that report to them. The query performs as a self-join on the Staff table. It treats one instance as the supervisor and the other as the subordinate. It also joins with the Country table to collect the supervisor's country. The results are grouped by supervisor and ordered alphabetically by country name. 
 <br>
 <img width="745" height="128" alt="Screenshot 2026-03-30 at 3 08 30 PM" src="https://github.com/user-attachments/assets/227c83ff-60be-4d87-ab1c-45c54c759bec" />
 <br>
