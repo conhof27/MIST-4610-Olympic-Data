@@ -93,19 +93,19 @@ Our data model consists of 14 unique entities:
 ### Query 1: Total Medals by Country (Simple)
 
 **Description:** 
-Query 1 lists the total number of medals won by each country while ordering the from highest amount to lowest. This query joins together the Country, Athlete, and Results tables in order to count the number of medals associated with each country's athletes. The results are filtered to only include rows where a medal was awardded. Then that data is grouped by country name and ordered in descending order of total medals won.
+Query 1 lists the total number of medals won by each country while ordering the from highest amount to lowest. This query joins together the Country, Athlete, and Results tables in order to count the number of medals associated with each country's athletes. The results are filtered to only include rows where a medal was awarded. Then that data is grouped by country name and ordered in descending order of total medals won.
 <br>
 <img width="581" height="107" alt="Screenshot 2026-03-30 at 1 01 52 PM" src="https://github.com/user-attachments/assets/221683af-c035-40e1-b682-72830c30c22a" /> 
 <br>
 <img width="158" height="198" alt="Screenshot 2026-03-30 at 1 02 19 PM" src="https://github.com/user-attachments/assets/922fbfc8-1ad6-4116-a6d6-adbbab706703" />
 
 **Justification:**
-Query 1 allows managers or olympic fans to conscisely view the number of medals each country has been awarded. This is useful to assess which countries are in the lead by number of medals won. This allows country's olympic success to be compared and ranked in a simple manner, exlcuding factors other than event results. Query 1  allows a manager to analyze a country as a whole, including every event. This compares countries regardless of how many events they compete in but rather how they have competed in the olympics in its entirety.
+Query 1 allows managers or olympic fans to concisely view the number of medals each country has been awarded. This is useful to assess which countries are in the lead by number of medals won. This allows a country's olympic success to be compared and ranked in a simple manner, excluding factors other than event results. Query 1  allows a manager to analyze a country as a whole, including every event. This compares countries regardless of how many events they compete in but rather how they have competed in the Olympics in its entirety.
 
 ### Query 2: Average Ticket Price per Sport (Simple)
 
 **Description:** 
-Query 2 lists the average ticket price per sport while ordering them from highest price to lowest. The query joins together the Sport, Event, EventSession, Session, and Ticket tables in order to calculate tge average price of tickets associated with each sport. The results are then grouped by sport and ordered in descending order of average ticket price.
+Query 2 lists the average ticket price per sport while ordering them from highest price to lowest. The query joins together the Sport, Event, EventSession, Session, and Ticket tables in order to calculate the average price of tickets associated with each sport. The results are then grouped by sport and ordered in descending order of average ticket price.
 <br>
 <img width="550" height="148" alt="Screenshot 2026-03-30 at 1 19 47 PM" src="https://github.com/user-attachments/assets/2a370085-8498-4c9d-b4a2-8e33008f71bd" />
 <br>
@@ -117,24 +117,26 @@ Query 2 gives a manager perspective on event sporting event's ticket pricing. Th
 ### Query 3: 500m, 1000m, and 1500m Events by Gender (Simple)
 
 **Description:** 
-Query 3 lists the disctinct event names, gender categories, and associated sport name for all events that are short-to-mid distance races (500m, 1000m, 1500m). The query joins the Event and Sport table and then filters the results using a regulat expression to match only events with those distances in their names. The results are ordered alphabetically by event name and then by event gender. 
+Query 3 lists the distinct event names, gender categories, and associated sport name for all events that are short-to-mid distance races (500m, 1000m, 1500m). The query joins the Event and Sport table and then filters the results using a regular expression to match only events with those distances in their names. The results are ordered alphabetically by event name and then by event gender.
 <br>
 <img width="487" height="86" alt="Screenshot 2026-03-30 at 4 51 40 PM" src="https://github.com/user-attachments/assets/8f279e4a-8e2a-486b-ab01-322508db8479" />
 <br>
 <img width="361" height="133" alt="Screenshot 2026-03-30 at 4 51 57 PM" src="https://github.com/user-attachments/assets/e5a72ec1-549e-4960-8c90-699f606a8de5" />
 
 **Justification:**
+Query 3 allows a manager to view the names of events, genders, and sport names for events that are short-to-mid distance races. This is useful to aggregate the data of distance-based races. Many events in the Olympics are defined by distance and this query provides descriptive data of each of these events. This is useful for a broadcaster to neatly organize each event and be sure of accurately sharing information for each event. Furthermore, the alphabetical organization is helpful for quick retrieval of information. 
 
 ### Query 4: Post-2002 Athlete Demographics by Country (Simple)
 
 **Description:** 
-Query 4 lists the first name, last name, country, and date of birth of all athletes born aftre January 1, 2002, who are representing Japan, France, or Austria. This query joins the Athlete and Country tables and filters the results by both date of birth and country name. The results are ordered alphabetically by country name and then by last name.
+Query 4 lists the first name, last name, country, and date of birth of all athletes born after January 1, 2002, who are representing Japan, France, or Austria. This query joins the Athlete and Country tables and filters the results by both date of birth and country name. The results are ordered alphabetically by country name and then by last name.
 <br>
 <img width="555" height="105" alt="Screenshot 2026-03-30 at 4 57 14 PM" src="https://github.com/user-attachments/assets/9fb8029f-851d-468e-a2a3-cbab9524bd93" />
 <br>
 <img width="352" height="165" alt="Screenshot 2026-03-30 at 4 55 54 PM" src="https://github.com/user-attachments/assets/854aaf2f-4e4e-4e99-8afb-5d400f7a4318" />
 
 **Justification:**
+Query 4 lists out Gen Z athletes from Japan, France, and Austria. This could be potentially useful data for the Olympics to understand which athletes younger audiences from those countries are more likely to know, so that they can include those athletes in some form of targeted marketing. This data can also be used to better understand these specific athletes’ preferences from these countries to make higher quality accommodations in terms of dietary preferences, living preferences, etc.
 
 ### Query 5: Athletes Competing in Multiple Sports (Comp.)
 <img width="773" height="127" alt="Screenshot 2026-03-30 at 2 02 45 PM" src="https://github.com/user-attachments/assets/b0067bac-c7f4-4326-a6b5-ded96930e6d7" />
@@ -145,6 +147,7 @@ Query 4 lists the first name, last name, country, and date of birth of all athle
 A composite list of every athlete that competes in more than one sport. (In this scenario, we modified to only include Atheletes that are in 3 or more sports because the original output would've been to long to display)
 <br>
 **Justification:**
+Query 5 is useful for managers to have a list of athletes that compete in more than one sport (limited to 3). This is useful for broadcasters to provide insight to listeners on an Olympian’s experience or skill level. This information is useful for coordinators to understand which olympian may require additional accommodations such as transportation between their various events. Additionally, it could be useful for analysts to compare the performance of Olympians who compete in more or less sports than other given Olympians. 
 
 ### Query 6: Events with Above-Average Ticket Prices (Comp.)
 
@@ -156,6 +159,7 @@ Query 6 identifies the "Premium" events by listing all events whose average tick
 <img width="411" height="444" alt="Screenshot 2026-03-30 at 3 55 47 PM" src="https://github.com/user-attachments/assets/a106f671-8d86-400d-a1ef-85f0ec7068d3" />
 
 **Justification:**
+Query 6 gives managers a view of which events are "premium," meaning their ticket price is higher than the average ticket price among all events. This would be useful to managers who want to know who their audience is when it comes to creating promotions, ads, etc. It also puts those events that are in higher demand into one table, making it more convenient for managers to access that information. These are important events for the managers to focus on, as these are their highest spending customers.
 
 ### Query 7: Staff Managing Multiple Athletes (Comp.)
 
@@ -167,6 +171,7 @@ Query 7 lists all staff members who are assigned to manage 3 or more athletes, t
 <img width="333" height="250" alt="Screenshot 2026-03-30 at 4 01 42 PM" src="https://github.com/user-attachments/assets/bb185563-90d4-4cee-99b5-cb5d61851f44" />
 
 **Justification:**
+Query 7 is useful for both managers and staff members, as it displays the names of high-level staff members and the athletes that they’re assigned to, along with their specific roles. This allows managers to easily access which high-level trainers are working with which athletes, helping them assess how valuable these trainers are to the team. It also shows which trainers have the highest workload, and may result in them needing help tending to their athletes or having other jobs picked up by other trainers. 
 
 ### Query 8: Countries with More Medals than Staff (Comp.)
 
@@ -178,6 +183,7 @@ Query 8 lists all countries where the total number of medals won is greater than
 <img width="156" height="96" alt="Screenshot 2026-03-30 at 2 25 38 PM" src="https://github.com/user-attachments/assets/385101ed-333d-4f20-b858-207179f9624d" />
 
 **Justification:**
+Query 8 is useful for managers to view a concise list of the countries that have produced more medals than the staff number- in relation to that country, itself. This is useful for analysts to compare how staff size may relate to performance. The short list of 3 countries that have achieved a larger medal output than hired staff exemplifies that this is a rare occurrence. Analysts may use this information from Query 9 to further research these given countries and create an in-depth analysis on how each of these country’s staff operates. 
 
 ### Query 9: Oldest Medalists per Sport (Comp.)
 <img width="849" height="211" alt="Screenshot 2026-03-30 at 2 36 37 PM" src="https://github.com/user-attachments/assets/13d232a7-1fac-4f5a-a93d-4dc0d41c6e11" />
@@ -188,6 +194,7 @@ Query 8 lists all countries where the total number of medals won is greater than
 List the oldest medalists for each sport and include their name, age, and host country. 
 <br>
 **Justification:**
+Query 9 shows a manager an itemized list by sport, the oldest olympian’s name, age and host country. This could be useful for coordinators or broadcasters to recognize by name and host country the oldest Olympian competing in each sport. Using this query, each sport could be compared to determine which sport has the oldest competing olympian or to determine how many countries have the same aged oldest olympian. 
 
 ### Query 10: The Staff Hierarchy (Comp.)
 <img width="745" height="128" alt="Screenshot 2026-03-30 at 3 08 30 PM" src="https://github.com/user-attachments/assets/227c83ff-60be-4d87-ab1c-45c54c759bec" />
@@ -198,3 +205,4 @@ List the oldest medalists for each sport and include their name, age, and host c
 Utilizes a recursive self-join and an aggregate function to list every Supervisor alongside the exact count of how many subordinate staff members report directly to them.
 <br>
 **Justification:**
+Query 10 allows a manager to view how many subordinates report to each supervisor. This is useful for an Olympic analyst to consider or compare the size of each supervisor’s staff. This is also useful for Olympic coordinators to provide accommodations for staff that may differ from elite accommodations provided to supervisors. Additionally, for Olympic analysts- correlations between staff sizes and winning teams could be easily compared with this query. 
