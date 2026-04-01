@@ -48,7 +48,18 @@ To reflect the real-world logistics of the Olympic Games, our relational model u
 
 * **Venues (Recursive):** A `Venue` hosts many `Sessions`. To account for certain scenarios, we made another **Recursive Relationship** in the `Venue` table.  The `BackupVenueID` allows an outdoor venue to be linked directly to a guaranteed backup venue.
 
-* **Ticketing & Results (1:M):** A `Spectator` can purchase multiple `Tickets`, and a `Session` has many `Tickets`.  Finally, the `Results` table acts as a connecting piece, linking one `Athlete`, one `Event`, and one `Medal` to record the final outcomes of the games.  
+* **Ticketing & Results (1:M):** A `Spectator` can purchase multiple `Tickets`, and a `Session` has many `Tickets`.  Finally, the `Results` table acts as a connecting piece, linking one `Athlete`, one `Event`, and one `Medal` to record the final outcomes of the games.
+
+### What Data Our Database DOES NOT Support
+To keep a focused scope, our database had to exclude certain operational datasets.
+
+* **Specific Scoring:** While we store the final time, score, and placement of an athlete in an event, we chose not to track real-time/in-depth statistics.
+
+*  **Financial Information:** We track ticketing revenues, but our database does not store any information relating to salary, payroll, or compensation for Atheletes or Staff.
+
+* **Medical Records:** While we do store some general data of athletes, we do not have any fabricated data based on medical history, prescriptions, or specific injury logs that would be helpful to training staff.
+
+* **Inventory:** Our database tracks the capacity of venues, but we are not tracking any specific details such as food inventory, merchandise sales, or concessions at these venues.
 
 
 ## Data Dictionary
