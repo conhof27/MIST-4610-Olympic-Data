@@ -24,26 +24,36 @@ This database tracks the hierarchical structure of global competition, starting 
 <img width="3195" height="1920" alt="Olympic Relational Model G8" src="https://github.com/user-attachments/assets/cf831a8b-a5ae-4e33-8163-d65988bdb1ce" />
 
 
-### Explanation of the Data Model
+## Explanation of the Data Model
 
-Our data model consists of 14 unique entities:
+### What Data Our Database Supports 
+Our database is designed to manage the logistics, human resources, ticketing, and outcomes of a simulated dataset of the Winter Olympics.  At a high level, the system supports the storage of:
 
-* **Core Reference Data:** `Country`, `Venue`, `Sport`, `Medal`, and `Staff_Role`.  These lookup tables ensure data consistency and prevent entry anomalies (e.g., standardizing the 4 types of medals or standardizing IOC codes).
+* **National Delegations:** Information regarding participating countries, along with their athletes and their official support staff.
 
-* **People & Roles:** The `Athlete` and `Staff` tables are linked to their respective `Country`.  To account for the reality that an athlete might have multiple coaches and a coach might train multiple athletes, we resolved this M:N relationship with the `Athlete_Staff` bridge table.
+* **Event Infrastructure:** The breakdown of broad sports into specific events, scheduled across distinct time sessions, and hosted at specific physical venues with capacity limits.  
 
-* **Scheduling Logistics:** Because an `Event` (like the 100m Sprint) spans multiple time blocks (heats, semi-finals, finals), and a `Session` can host multiple events, they are connected via the `Event_Session` bridge table.  `Sessions` are physically hosted at a single `Venue`.
+* **Ticketing:** Records of individual spectators and the specific tickets they have purchased for various sessions, including prices and seat numbers.  
 
-* **Fan Access:** Fans (`Spectators`) purchase `Tickets` that grant them a specific seat and price point for a specific `Session`.
+* **Competition Results:** The final athletic outcomes, tracking where athletes placed in which events, their final scores or times, disqualification status, and if any medals were awarded.
 
-* **Outcomes:** The `Result` table acts as the ultimate transactional hub.  It connects an `Athlete`, an `Event`, and a `Medal` to record a finalized `ScoreOrTime`, `Placement`, and `IsDisqualified` flag.
+### Relationships Between Entities 
+To reflect the real-world logistics of the Olympic Games, our relational model uses a mix of standard and advanced relationships. 
 
-**What our database supports:** Tracking current game rosters, managing multi-day event schedules, processing ticket revenue, and tallying current medal leaderboards.
-**What our database does NOT support:** It does not store historical Olympic data from previous years, financial payroll for staff/athletes, or highly detailed in-game statistics (like possession time or individual lap splits).
+* **Nations and Delegations (1:M & 1:1):** A `country` sends many `Athletes` and `Staff` members to each game/event (1:M).  However, we put a strict 1:1 relationship between a `Country` and an `Athlete` to handle the assignment of flag bearers, utilizing the `MaleFlagBearerID` and `FemaleFlagBearerID` foreign keys.
+
+* **Staff Hierarchy (Recursive & M:N):** To model the chain of command, the `Staff` entity has a **Recursive Relationship** where a `SupervisorID` links subordinate staff members directly to their Head Coaches or Managers.  `Staff` are also categorized by a `StaffRole`.  Because staff or coaches can care for multiple athletes, we used an M:M relationship using the `AthleteStaff` table.  
+
+* **Scheduling and Events (1:M & M:N):** A broad `Sport` contains specific `Events`.  Because a tournament can have multiple time slots, `Event` and `Session` share an M:M relationship, resolved by the `EventSession` table.
+
+* **Venues (Recursive):** A `Venue` hosts many `Sessions`. To account for certain scenarios, we made another **Recursive Relationship** in the `Venue` table.  The `BackupVenueID` allows an outdoor venue to be linked directly to a guaranteed backup venue.
+
+* **Ticketing & Results (1:M):** A `Spectator` can purchase multiple `Tickets`, and a `Session` has many `Tickets`.  Finally, the `Results` table acts as a connecting piece, linking one `Athlete`, one `Event`, and one `Medal` to record the final outcomes of the games.  
+
 
 ## Data Dictionary
 
-*(Below is our data dictionary. This dictionary shows each of the 14 entities and every attribute within each entity in our database).*
+*(Below is our data dictionary. This dictionary shows each of the 14 entities and every attribute within each entity in our database.)*
 
 <img width="616" height="190" alt="StaffRole" src="https://github.com/user-attachments/assets/1d091d8e-ccf5-4925-98de-227e50a1f11a" />
 
